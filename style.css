@@ -1,0 +1,141 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#hero {
+    background: #d30d81;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#about, #skills, #portfolio, #contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #04c6f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-items {
+        grid-template-columns: 1fr;
+    }
+
+    header nav .nav-links {
+        display: flex;
+    }
+
+    header nav .logo {
+        font-size: 1.5rem;
+    }
+}
